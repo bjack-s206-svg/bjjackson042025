@@ -26,7 +26,7 @@ body {
 #logo {
   width: 6.25rem;
   height: 6.25rem;
-  background-color: red;
+  background-color: orange;
   background-image: url(Images/logosmall2.png);
 }
 
@@ -52,7 +52,7 @@ body {
 #pageheader nav ul li{
   border: 2px solid silver;
   padding: 1rem;
-  background-color: cadetblue;
+  background-color: orange;
   margin: 2px;
   border-radius: 10px;
 }
@@ -71,12 +71,12 @@ body {
   aspect-ratio: 16 / 9;
 }
 #career {
-  background-color: #feac12;
+  background-color: orange;
   min-height: 10rem;
   padding: 1rem;
 }
 #pagecontent {
-  background-color: #feb63f;
+  background-color: orange;
   min-height: 10rem;
   padding: 1rem;
 }
@@ -103,17 +103,17 @@ span {
 }
 
 #semester1 {
-  background-color: #fe9602;
+  background-color: orange;
   min-height: 10rem;
   padding: 1rem;
 }
 #semester2 {
-  background-color: mediumblue;
+  background-color: orange;
   min-height: 10rem;
   padding: 1rem;
 }
 #pagefooter {
-  background-color: #fe8802;
+  background-color: orange;
   min-height: auto;
   padding: 1rem;
 }
@@ -121,8 +121,22 @@ span {
   text-align: center;
   min-height: auto;
 }
+
+#aitools
+{
+  background-color: orange;
+  min-height: auto;
+  padding: 1rem;
+}
+
+#aitools .container
+{
+  text-align: center;
+  min-height: auto;
+}
+
 #subfooter {
-  background-color: #ff6204;
+  background-color: orange;
   min-height: 10rem;
   padding: 1rem;
   text-align: center;
