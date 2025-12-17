@@ -4,19 +4,20 @@ html {
 
 body {
   background-color: darkgray;
+  color: gold;
 }
 
 .container {
   min-height: 10rem;
   max-width: 75rem;
   margin: auto;
-  background-color: lightgray;
-  border: 1px solid darkgray;
+  background-color: black;
+  border: 1px solid black;
   padding: 1rem;
 }
 
 #pageheader {
-  background-color: mediumblue;
+  background-color:#c58b6a ;
   min-height: auto;
   padding: 1rem;
   margin: auto;
@@ -33,23 +34,49 @@ body {
   background-color: white;
   min-height: auto;
   text-align: center;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+#pageheader nav{
+  text-align: center;
+}
+
+#pageheader nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#pageheader nav ul li{
+  border: 2px solid silver;
+  padding: 1rem;
+  background-color: cadetblue;
+  margin: 2px;
+  border-radius: 10px;
+}
+
+#pageheader nav ul li:hover
+{
+  background-color: yellow;
 }
 
 #media {
   background-color: lightblue;
   min-height: 10rem;
   padding: 1rem;
-  background-image: url(Images/hero.png);
+  background-image: url(Images/la.webp);
   background-size: cover;
   aspect-ratio: 16 / 9;
 }
 #career {
-  background-color: mediumblue;
+  background-color: #feac12;
   min-height: 10rem;
   padding: 1rem;
 }
 #pagecontent {
-  background-color: mediumblue;
+  background-color: #feb63f;
   min-height: 10rem;
   padding: 1rem;
 }
@@ -76,7 +103,7 @@ span {
 }
 
 #semester1 {
-  background-color: mediumblue;
+  background-color: #fe9602;
   min-height: 10rem;
   padding: 1rem;
 }
@@ -86,7 +113,7 @@ span {
   padding: 1rem;
 }
 #pagefooter {
-  background-color: mediumblue;
+  background-color: #fe8802;
   min-height: auto;
   padding: 1rem;
 }
@@ -95,7 +122,7 @@ span {
   min-height: auto;
 }
 #subfooter {
-  background-color: mediumblue;
+  background-color: #ff6204;
   min-height: 10rem;
   padding: 1rem;
   text-align: center;
@@ -103,6 +130,31 @@ span {
 audio {
   display: block;
   margin: auto;
-  background-color: mediumblue;
-  border: 5px solid mediumblue;
+  background-color: black;
+  border: 5px solid black;
+}
+
+@media screen and (min-width: 600px)  {
+#pageheader nav ul 
+{
+  background-color: red;
+  margin-top: 2rem;
+}
+#pageheader nav ul li{
+  display: inline;
+}
+
+
+  #pagecontent {
+    
+  #career {
+   
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #pagecontent {
+  }
+  #career {
+  }
 }
