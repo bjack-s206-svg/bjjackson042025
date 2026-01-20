@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -55,6 +55,23 @@
         list-style-type: none;
         font-family: sans-serif;
       }
+      #Cards {
+        order: 2px solid silver;
+        padding: 1rem;
+        background-color: lightblue;
+        width: 85%;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      #links {
+        border: 2px solid silver;
+        padding: 1rem;
+        width: 85%;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+      }
     </style>
   </head>
 
@@ -80,25 +97,29 @@
     </div>
 
     <h2>Cards</h2>
-    <div class="card">
-      <h3>Card Title 1</h3>
-      <p>This is a description for card 1.</p>
+    <div id="Cards">
+      <div class="card">
+        <h3>Card Title 1</h3>
+        <p>This is a description for card 1.</p>
+      </div>
+      <div class="card">
+        <h3>Card Title 2</h3>
+        <p>This is a description for card 1.</p>
+      </div>
+      <div class="card">
+        <h3>Card Title 3</h3>
+        <p>This is a description for card 1.</p>
+      </div>
     </div>
-    <div class="card">
-      <h3>Card Title 2</h3>
-      <p>This is a description for card 1.</p>
-    </div>
-    <div class="card">
-      <h3>Card Title 3</h3>
-      <p>This is a description for card 1.</p>
-    </div>
-
     <h2>Link Lists</h2>
+
     <ul>
-      <li><a href="https://google.com/">Google</a></li>
-      <li><a href="https://google.com/">Google</a></li>
-      <li><a href="https://google.com/">Google</a></li>
-      <li><a href="https://google.com/">Google</a></li>
+      <div id="links">
+        <li><a href="https://google.com/">Google</a></li>
+        <li><a href="https://google.com/">Google</a></li>
+        <li><a href="https://google.com/">Google</a></li>
+        <li><a href="https://google.com/">Google</a></li>
+      </div>
     </ul>
   </body>
 </html>
