@@ -1,7 +1,5 @@
-
 /* Mobile View Default */
-:root
-{
+:root {
   --primary-color: red;
   --secondary-color: lime;
   --tertiary-color: blue;
@@ -14,7 +12,7 @@ html {
 body {
   background-color: orange;
   color: gold;
-  padding: ;
+  padding:;
 }
 
 .container {
@@ -24,12 +22,11 @@ body {
   background-color: black;
   border: 1px solid black;
   padding: 1rem;
-  
-  
+  border-radius: 10;
 }
 
 #pageheader {
-  background-color:#c58b6a ;
+  background-color: #c58b6a;
   min-height: auto;
   padding: 1rem;
   margin: auto;
@@ -42,41 +39,40 @@ body {
   background-color: orange;
   background-image: url(Images/logosmall2.png);
   margin: auto;
+  border-radius: 50%;
 }
 
 #pageheader .container {
-  background-color: white;
-  min-height:
+  background-color: black;
   text-align: center;
-  color:white
+  color: white;
   padding: 0;
-  margin auto
-  min-width: auto; 
+  margin: auto;
+  min-width: auto;
+  border: 1px solid orange;
 }
 
-#pageheader nav{
+#pageheader nav {
   text-align: center;
-  min-height: auto;
-  padding: .25rem;
-
+  min-height: 3rem;
+  padding: 0.25rem;
+  background-color: orange;
 }
 
-#pageheader nav ul{
+#pageheader nav ul {
   list-style-type: none;
-  margin: 0;
   padding: 0;
 }
 
-#pageheader nav ul li{
+#pageheader nav ul li {
   border: 2px solid silver;
   padding: 1rem;
-  background-color: orange;
+  background-color: none;
   margin: 2px;
   border-radius: 10px;
 }
 
-#pageheader nav ul li:hover
-{
+#pageheader nav ul li:hover {
   background-color: yellow;
 }
 
@@ -100,7 +96,7 @@ body {
 }
 
 blockquote {
-  background-color: ;
+  background-color:;
   padding: 1rem;
   width: 50%;
   margin: 0 auto;
@@ -117,7 +113,7 @@ blockquote + span {
 }
 
 span {
-  background-color: ;
+  background-color:;
 }
 
 #semester1 {
@@ -140,15 +136,13 @@ span {
   min-height: auto;
 }
 
-#aitools
-{
+#aitools {
   background-color: orange;
   min-height: auto;
   padding: 1rem;
 }
 
-#aitools .container
-{
+#aitools .container {
   text-align: center;
   min-height: auto;
 }
@@ -166,28 +160,30 @@ audio {
   border: 5px solid black;
 }
 
-/* Tablet View */
-@media screen and (min-width: 600px)
-#pageheader nav ul 
-{
-  background-color: orange;
-  margin-top: 2rem;
-  
-}
-#logo{
-  margin: 0;
-}
-#pageheader nav ul li{
-  display: inline;
+.container a {
+  color: yellow;
 }
 
+/* Tablet View */
+@media screen and (min-width: 600px) {
+  #pageheader nav ul {
+    background-color: black;
+    margin-top: 2rem;
+  }
+  #logo {
+    margin-left: 0;
+  }
+  #pageheader nav ul li {
+    display: inline-block;
+  }
 
   #pagecontent {
-    
+  }
+
   #career {
-   
   }
 }
+
 /* desktop Veiw */
 @media screen and (min-width: 1000px) {
   #pagecontent {
