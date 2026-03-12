@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Menu</title>
+
+    <style>
+        /* Mobile First CSS */
+        html{
+            /* Temporary - Delete */
+            height: 200%;
+        }
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 0;
+}
+
+#pageheader{
+    background-color: orangered;
+    padding: 1rem;
+    /* Default */
+    position: static;
+}
+
+
+        #logo{
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            display: block;
+        }
+
+        #fblogoheader{
+            background-color: black;
+      
+        }
+        #pageheader h1 {
+            text-align: center;
+            color: white;
+            /* Remove */
+            background-color: black;
+        }
+        #pageheader nav {
+            background-color: black;
+            padding: .5rem;
+            border-radius: 10px;
+        }
+        #pageheader ul{
+            padding: .5rem;
+            list-style-type: none;
+            background-color: orangered;
+            /* FLexbox component */
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+        }
+        #pageheader li{
+            text-align: center;
+            border: 1px solid white;
+            padding: .5rem;
+            background-color: black
+        }
+        #pageheader a {
+            color: white;
+            text-decoration: none;
+        }
+        /* None header elements */
+        main{
+            padding: 1rem;
+        }
+        p{
+            line-height: 1.5;
+            color: #333;
+        }
+
+        @media screen and (min-width:650px)
+        {
+            body{
+                background-color: black;
+            }
+            #pageheader{
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                /* Flexbox component */
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: black;
+                
+            }
+
+            #fblogoheader{
+                /* flexbox component */
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+                background-color: none;
+            }
+
+            #pageheader ul {
+                flex-direction: row;
+                justify-content: center;
+                background-color: black;
+                border: 1px solid black;
+            }
+
+            #pageheader nav{
+                min-width: 400px;
+                background-color: black;
+            }
+
+            #logo{
+                width: 80px;
+                height: 80px;
+                background-color: black;
+            }
+
+            main{
+                padding-top: 200px;
+                color: white;
+                background-color: orangered;
+            }
+
+            p{
+                color: white;
+            }
+            body{
+                background-color: orangered;
+                margin: 0;
+                padding: 0;
+            }
+
+            
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <header id="pageheader">
+
+        <!-- Start the logo and h11 -->
+         <div id="fblogoheader">
+            <img src="Images/paws_logo.png" alt="Paws and Whiskers Logo" id="logo">
+            <h1>Paws and Whiskers</h1>
+         </div>
+         <!-- End the logo and h1 -->
+
+         <!-- Start navigation -->
+         <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our Pets</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+         </nav>
+
+         <!-- End navigation -->
+
+    </header>
+    
+    <main>
+        <h2>Fixed Menu</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, veniam tempora! Ullam natus rem sapiente maxime eos, dignissimos quod sit similique laboriosam recusandae vel tenetur sunt dolorem magni optio quibusdam exercitationem possimus facilis incidunt aspernatur repudiandae ad modi? Vel illo est repudiandae ipsa exercitationem! Laboriosam sapiente, odio ad tempore dolor porro autem obcaecati enim sit fugit pariatur, voluptas in deleniti voluptatum atque velit accusantium illum animi numquam dolorum. Veniam, ipsa explicabo. Assumenda facilis ipsam at hic labore, ipsa aperiam exercitationem quibusdam sapiente tenetur reprehenderit id accusantium error laboriosam iusto nihil illo in voluptatum distinctio maxime aliquid expedita eligendi totam. Temporibus.
+        </p>
+    </main>
+
+</body>
+</html>
